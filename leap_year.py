@@ -22,3 +22,16 @@ def is_leap_year(year):
     # Non divisible by 4 so not leap year
     else:
         return False
+
+
+def main():
+    # Get user input for the year
+    year_input = input("Enter a year: ")
+    year = int(year_input)
+
+    # Call leap year checker function
+    is_leap_year(year)
+
+
+if __name__ == "__main__":
+    main()
