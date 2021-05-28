@@ -18,3 +18,14 @@ def fizzbuzz(num):
     # Else just print the number
     else:
         print(num)
+
+
+def print_range():
+    # Print from 1 to 100 (ending range value is EXCLUSIVE)
+    for i in range(1, 101):
+        fizzbuzz(i)
+
+
+# Run print_range automatically if we execute this python file directly
+if __name__ == "__main__":
+    print_range()
