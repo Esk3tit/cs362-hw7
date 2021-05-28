@@ -14,3 +14,7 @@ def fizzbuzz(num):
     # Buzz print (if multiple of 5)
     elif num % 5 == 0:
         print("Buzz")
+
+    # Else just print the number
+    else:
+        print(num)
