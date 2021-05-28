@@ -36,3 +36,15 @@ def test_fizzbuzz(capsys):
         # Assert test on captured output
         # Note: print in python adds newline so check for it too
         assert captured.out == "FizzBuzz\n"
+
+
+def test_other(capsys):
+    # Use for loop to test a few numbers that are not multiples of 3 and 5
+    for i in [1, 2, 4]:
+        fizzbuzz.fizzbuzz(i)
+        # capture printed output on stdout to test
+        captured = capsys.readouterr()
+
+        # Assert test on captured output
+        # Note: print in python adds newline so check for it too
+        assert captured.out == str(i) + "\n"
